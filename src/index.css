@@ -1,0 +1,157 @@
+:root {
+	--primary: #D81E5B;
+	--light: #EEE;
+	--light-alt: #61759b;
+	--dark: #131A26;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Fira Sans", sans-serif;
+}
+
+body {
+	/* background-color: var(--light-alt);
+	back */
+	color: var(--light);
+  background-color: #131A26;
+}
+
+.container {
+  max-width: 40rem;
+  padding: 32px;
+  margin: 0 auto;
+  background-color: #131A26;
+}
+
+.heading{
+  text-align: center;
+}
+
+.form{
+ margin-top: 2rem;
+}
+
+.form input {
+ width: 85%;
+ padding: 3px;
+ margin: 20px;
+ border: transparent;
+ border-radius: 10px;
+ height: 50px;
+ font-size: medium;
+}
+
+.form button {
+  padding: 3px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  margin: 20px;
+  width: 200px;
+  height: 40px;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.todo {
+
+  border-radius: 13px;
+  background-color: #2c323d;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.open-button button a{
+	background-color: none;
+}
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--light);
+	transition: 0.4s;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.check-complete .checkbox{
+	background-color: var(--primary);
+ 
+}
+
+.check-complete .text{
+  text-decoration: line-through;
+}
+
+
+
+.text {
+ margin-left: 1rem;
+}
+
+.delete-todo {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+}
+
+
+.edit-todo-container {
+	min-height: 100vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: Arial, sans-serif;
+  }
+  
+  .edit-todo-card {
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	background-color: #333;
+	text-align: center;
+  }
+  
+  .edit-todo-title {
+	margin-bottom: 20px;
+  }
+  
+  .edit-todo-input {
+	padding: 8px;
+	border-radius: 4px;
+	border: none;
+	margin-right: 10px;
+  }
+  
+  .edit-todo-button {
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: none;
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+  }
+
+  .back-to-home-button {
+	display: block;
+	margin-top: 20px;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: green;
+	color: white;
+	
+  }
+  
